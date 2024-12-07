@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #4a148c 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: white !important;
+        }
+        
+        .project-card {
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.2);
+        }
+        
+        .skills-section {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        
+        .tag {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50rem;
+            font-size: 0.875rem;
+            display: inline-block;
+            margin: 0.25rem;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f8f9fa;
+            color: #6c757d;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            background: #4a148c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Saicharan Gogikar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold mb-4">Hello, Iam Saicharan</h1>
+                    <p class="lead mb-4">Hi, I’m Saicharan, a passionate developer with experience in building robust web applications. I specialize in Java and have worked on several projects using Spring Boot, React.js, and MYSQL.
+
+                        My goal is to create efficient, user-friendly software that solves real-world problems.
+                        </p>
+                    <div class="d-grid gap-3 d-sm-flex">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4">Get in touch</a>
+                        <a href="#projects" class="btn btn-outline-light btn-lg px-4">View my work</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 project-card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Management Application</h5>
+                            <p class="card-text">Developed a student management application using Java, Spring Boot for backend development, React.js for the frontend, and MySQL as the database, enabling efficient student data management and seamless user interaction </p>
+                            <div class="mb-3">
+                                <span class="tag">Java</span>
+                                <span class="tag">MYSQL</span>
+                                <span class="tag">React.js</span>
+                            </div>
+                            <a href="https://github.com/saicharangogikar/student-management-application-backend" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 project-card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather Forecast Application</h5>
+                            <p class="card-text">Developed a weather forecast application that displays a 5-day weather forecast, leveraging React for frontend development and Bootstrap for styling to ensure a responsive and user-friendly interface </p>
+                            <div class="mb-3">
+                                <span class="tag">React</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">TypeScript</span>
+                            </div>
+                            <a href="https://github.com/saicharangogikar/Weather-forecast-Application" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 project-card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Little Lemon Restaurant</h5>
+                            <p class="card-text">
+                                "Designed and developed a simple restaurant website, showcasing menu offerings and key details, with a responsive layout for an enhanced user experience. </p>
+                            <div class="mb-3">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                            <a href="https://little-lemon-restaurant-eta.vercel.app/" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills & Expertise</h2>
+            <div class="row g-4">
+                <!-- Frontend Skills -->
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card text-white bg-transparent">
+                        <div class="card-body">
+                            <h3 class="card-title h4 mb-4">Frontend</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-circle fa-xs me-2"></i>React.js</li>
+                                <li class="mb-2"><i class="fas fa-circle fa-xs me-2"></i>JavaScript</li>
+                                <li class="mb-2"><i class="fas fa-circle fa-xs me-2"></i>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card text-white bg-transparent">
+                        <div class="card-body">
+                            <h3 class="card-title h4 mb-4">Backend</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-circle fa-xs me-2"></i>Java</li>
+                                <li class="mb-2"><i class="fas fa-circle fa-xs me-2"></i>Spring Boot</li>
+                                <li class="mb-2"><i class="fas fa-circle fa-xs me-2"></i>MYSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card text-white bg-transparent">
+                        <div class="card-body">
+                            <h3 class="card-title h4 mb-4">Tools</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-circle fa-xs me-2"></i>Git</li>
+                                <li class="mb-2"><i class="fas fa-circle fa-xs me-2"></i>GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Get in Touch</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <p class="lead mb-4">I'm currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <div class="d-flex gap-3 mb-4">
+                        <a href="gogikarsaicharan1@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/saicharangogikar" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saicharangogikar274/" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
